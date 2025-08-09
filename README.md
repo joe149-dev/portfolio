@@ -8,12 +8,6 @@
 [![Tailwind](https://img.shields.io/badge/Tailwind-3.4.1-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green?style=flat-square)](LICENSE)
 
-  <div>
-    <p></p>
-    <p style="margin: 0; font-size: 16px; color: #eaeaea;">🚀 Showcase your journey with this modern, interactive portfolio template 🌟</p>   <p></p>
-    <img src="https://raw.githubusercontent.com/PraveenGongada/portfolio/refs/heads/main/docs/images/home.png" alt="Portfolio Home" width="90%" style="border-radius: 12px; margin-bottom: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);" />
-  </div>
-</div>
 
 ## 📸 Screenshots
 

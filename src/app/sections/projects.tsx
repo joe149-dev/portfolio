@@ -17,7 +17,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, Github, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Github, ChevronLeft, ChevronRight } from 'lucide-react';
 import { projects } from '@/app/config/projects';
 import { Button } from '@/app/components/button';
 import { isMinimal } from '@/app/utils';
@@ -355,8 +355,6 @@ const Projects: React.FC = () => {
                           className="flex items-center text-gray-300 hover:text-emerald-400 transition-colors duration-300"
                           aria-label={`View live demo of ${project.title}`}
                         >
-                          {/* <ExternalLink size={18} className="mr-1.5" />
-                          <span>Live Demo</span> */}
                         </a>
                       )}
 

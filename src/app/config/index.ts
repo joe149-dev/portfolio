@@ -61,7 +61,7 @@ export const portfolioConfig: PortfolioConfig = {
       title: 'About',
       subtitle: 'Me',
       bio: [
-        "Hi, I’m a software engineer with over 10 years of hands-on experience building everything from scalable web apps to blockchain-based solutions",
+        "Hi, I’m a software engineer with over 8 years of hands-on experience building everything from scalable web apps to blockchain-based solutions",
         "I’ve worked as a senior full stack developer across a wide range of technologies,including front-end frameworks like React, Vue, Angular, and Next.js",
         "When I'm not working on code professionally, you'll find me reading about emerging technologies, contributing to open-source projects, and constantly picking up new skills and hobbies"
       ],

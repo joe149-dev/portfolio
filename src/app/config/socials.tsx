@@ -34,7 +34,7 @@ export const socials: Social[] = [
   {
     name: 'Email',
     icon: <Mail size={20} />,
-    url: 'mailto:joerichards.dev@gmail.com',
+    url: 'mailto:joerichards0211@gmail.com',
     color: '#D44638',
   },
   {

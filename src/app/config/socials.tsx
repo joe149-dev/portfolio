@@ -19,28 +19,5 @@ import { TelegramIcon } from '../utils/TelegramIcon';
 import { Social } from '../types/types';
 
 export const socials: Social[] = [
-  {
-    name: 'GitHub',
-    icon: <Github size={20} />,
-    url: 'https://github.com/joe149-dev',
-    color: '#6e7681',
-  },
-  {
-    name: 'LinkedIn',
-    icon: <Linkedin size={20} />,
-    url: 'https://linkedin.com',
-    color: '#0077B5',
-  },
-  {
-    name: 'Email',
-    icon: <Mail size={20} />,
-    url: 'mailto:joerichards0211@gmail.com',
-    color: '#D44638',
-  },
-  {
-    name: 'Telegram',
-    icon: <TelegramIcon/>,
-    url: 'https://web.telegram.org/a/#@joe149dev',
-    color: '#1DA1F2',
-  },
+
 ];

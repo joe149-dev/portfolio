@@ -137,31 +137,7 @@ const ConnectWithMe: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Social links grid */}
-        <motion.div
-          className="max-w-3xl mx-auto"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-100px' }}
-        >
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">{renderSocialLinks()}</div>
-        </motion.div>
 
-        {/* Add a CSS animation for the gradient borders */}
-        <style jsx global>{`
-          @keyframes gradientBorder {
-            0% {
-              background-position: 0% 50%;
-            }
-            50% {
-              background-position: 100% 50%;
-            }
-            100% {
-              background-position: 0% 50%;
-            }
-          }
-        `}</style>
       </div>
     </section>
   );

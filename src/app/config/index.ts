@@ -66,7 +66,7 @@ export const portfolioConfig: PortfolioConfig = {
         "When I'm not working on code professionally, you'll find me reading about emerging technologies, contributing to open-source projects, and constantly picking up new skills and hobbies"
       ],
       details: [
-        { label: 'Location', value: 'Based in Hong Kong' },
+        { label: 'Location', value: 'Based in Philippines' },
         { label: 'Experience', value: '10+ Years Experience' },
       ],
       qualities: [

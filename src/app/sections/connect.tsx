@@ -50,9 +50,66 @@ const ConnectWithMe: React.FC = () => {
     return `${r}, ${g}, ${b}`;
   };
 
+  const renderSocialLinks = () => {
+    return socials.map((link, index) => {
+      const rgbColor = getRgbValues(link.color);
+
+      return (
+        <motion.div
+          key={index}
+          variants={itemVariants}
+          whileHover={{
+            y: -8,
+            boxShadow: `0 15px 30px rgba(${rgbColor}, 0.15)`,
+          }}
+          className="w-full rounded-2xl"
+        >
+          <a
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block h-full bg-gray-800/40 backdrop-blur-sm rounded-2xl border border-gray-700/50 hover:border-opacity-0 transition-all duration-300 overflow-hidden group relative"
+            style={{
+              boxShadow: `0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(${rgbColor}, 0.1)`,
+            }}
+          >
+            {/* Animated gradient border on hover */}
+            <div className="absolute inset-0 p-[1px] rounded-2xl overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div
+                className="absolute inset-0 rounded-2xl"
+                style={{
+                  background: `linear-gradient(45deg, ${link.color}80, rgba(${rgbColor}, 0.1), ${link.color}80)`,
+                  backgroundSize: '200% 200%',
+                  animation: 'gradientBorder 3s linear infinite',
+                }}
+              />
+            </div>
+
+            <div className="relative flex flex-col items-center text-center p-6 h-full z-10">
+              {/* Icon with gradient background */}
+              <div
+                className="w-16 h-16 rounded-full flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110"
+                style={{
+                  background: `linear-gradient(135deg, ${link.color}20, ${link.color}40)`,
+                  boxShadow: `0 4px 12px rgba(${rgbColor}, 0.15)`,
+                }}
+              >
+                <div style={{ color: link.color }} className="text-2xl">
+                  {link.icon}
+                </div>
+              </div>
+
+              {/* Platform name */}
+              <span className="text-l font-medium text-white mb-1">{link.name}</span>
+            </div>
+          </a>
+        </motion.div>
+      );
+    });
+  };
 
   return (
-   <section id="connect" className="py-24 relative">
+    <section id="connect" className="py-24 relative">
       {/* Decorative elements */}
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-emerald-500/30 to-transparent" />
       <div className="absolute -left-20 top-40 w-72 h-72 bg-purple-500/5 rounded-full blur-3xl" />
@@ -79,6 +136,23 @@ const ConnectWithMe: React.FC = () => {
             say hello!
           </p>
         </motion.div>
+
+       
+
+        {/* Add a CSS animation for the gradient borders */}
+        <style jsx global>{`
+          @keyframes gradientBorder {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+        `}</style>
       </div>
     </section>
   );
